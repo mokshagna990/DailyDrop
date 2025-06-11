@@ -1,0 +1,99 @@
+/* diary_form.css - Styles for diary entry form */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body.diary-form-page {
+  background-color: #f9fafb;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+  color: #333;
+}
+
+.diary-form-container {
+  background-color: #ffffff;
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.diary-form-container h2 {
+  margin-bottom: 1.75rem;
+  font-weight: 700;
+  color: #222;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+input[type="text"],
+textarea {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+a.btn-cancel {
+  display: inline-block;
+  margin-top: 1.25rem;
+  color: #6c757d;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+a.btn-cancel:hover {
+  color: #343a40;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
